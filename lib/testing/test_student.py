@@ -6,20 +6,20 @@ from lib.chatty_student import ChattyStudent
 class TestStudent(unittest.TestCase):
     def test_student_hello(self):
         student = Student()
-        self.assertEqual(student.hello(), None)
+        self.assertIsNone(student.hello())
 
     def test_student_raise_hand(self):
         student = Student()
-        self.assertEqual(student.raise_hand(), None)
+        self.assertIsNone(student.raise_hand())
 
 class TestChattyStudent(unittest.TestCase):
     def test_chatty_student_hello(self):
         chatty_student = ChattyStudent()
-        self.assertEqual(chatty_student.hello(), None)
+        self.assertIsNone(chatty_student.hello())
 
     def test_chatty_student_raise_hand(self):
         chatty_student = ChattyStudent()
-        self.assertEqual(chatty_student.raise_hand(), None)
+        self.assertIsNone(chatty_student.raise_hand())
 
 if __name__ == '__main__':
     unittest.main()
